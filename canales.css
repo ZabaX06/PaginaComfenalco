@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#5b9b4e52;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.main-title {
+    color: #28a745;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.carousel-vertical-container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.carousel-vertical {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.7s ease-in-out;
+    height: 100%;
+}
+
+.carousel-slide {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: #218838;
+}
+
+.carousel-prev {
+    top: 10px;
+}
+
+.carousel-next {
+    bottom: 10px;
+}

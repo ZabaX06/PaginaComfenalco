@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COLEGIO COMFENALCO</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="left-container">
+                <!-- Menú y los iconos están dentro del contenedor de la izquierda -->
+                <div class="menu-container">
+                    <div class="menu-toggle">
+                        <div class="menu-icon">
+                            <a href="indexMenu.html"> <div class="bar"></div></a>
+                            <a href="indexMenu.html"> <div class="bar"></div></a>
+                            <a href="indexMenu.html"> <div class="bar"></div></a>
+
+                        </div>
+                        <span class="menu-text">MENU</span>
+                    </div>
+                </div>
+        
+                <!-- Iconos a la izquierda -->
+                <div class="icon-container">
+                    <i class="fas fa-share-square"></i>
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+        
+            <!-- Buscador a la derecha -->
+            <div class="search-container">
+                <form>
+                    <center>
+                        <input type="text" placeholder="Buscar...">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    </center>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <img src="https://virtualaula.comfenalco.com.co/colegioibague/moodle/pluginfile.php?file=%2F1%2Ftheme_enlightlite%2Flogo%2F1724250521%2FLOGO-COLEGIO-01.png" alt="Imagen descriptiva">
+            </div>
+        </header>
+    </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Área de Gestión</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <br>
+        </div>
+        <div class="carrusel">
+            <div class="carrusel-items">
+                <div class="carrusel-item"><img src="images/colegio banner.png" alt="Imagen 1"></div>
+                <div class="carrusel-item"><img src="images/colegio banner.png" alt="Imagen 2"></div>
+                <div class="carrusel-item"><img src="images/colegio banner.png" alt="Imagen 3"></div>
+            </div>
+            <button class="carrusel-prev">&#10094;</button>
+            <button class="carrusel-next">&#10095;</button>
+        </div>
+        <div class="header-line">
+            <div class="dotted-line"></div>
+            <img src="https://png.pngtree.com/png-clipart/20230426/original/pngtree-lightbulb-line-icon-png-image_9107695.png" alt="Logo" class="logo">
+            <div class="dotted-line"></div>
+        </div>
+
+<!-- Asistente virtual -->
+<div class="virtual-assistant">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/User_icon_BLACK-01.png/640px-User_icon_BLACK-01.png" alt="Asistente Virtual" class="assistant-icon" onclick="showForm()">
+</div>
+
+<!-- Formulario del asistente virtual -->
+<div id="assistant-form" class="form-container" style="display: none;">
+    <div class="form-content">
+        <img src="https://virtualaula.comfenalco.com.co/colegioibague/moodle/pluginfile.php?file=%2F1%2Ftheme_enlightlite%2Flogo%2F1724250521%2FLOGO-COLEGIO-01.png" alt="Logo Colegio" class="logo-colegio">
+        <h2>Formulario de Solicitud</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="document">Documento de identidad:</label>
+            <input type="text" id="document" name="document" required>
+
+            <label for="gender">Tipo de Solicitud:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Queja</option>
+                <option value="female">Sugerencia</option>
+                <option value="other">Otro</option>
+            </select>
+
+            <label for="nationality">Sugerencias:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <div class="form-buttons">
+                <button type="submit">Guardar</button>
+                <button type="button" onclick="closeForm()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+        <script src="script.js"></script>
+
+    
+   
+
+        <div class="container">
+            <h1>INSTRUCTIVOS</h1>
+            <div class="grid">
+                <div class="item">PREINSCRIPCION<br>ESTUDIANTES NUEVOS</div>
+                <div class="item">REQUISITOS<br>MATRICULA</div>
+                <div class="item">INSTRUCTIVO DE<br>MATRICULA<br>ESTUDIANTES NUEVOS</div>
+                <div class="item">CRONOGRAMA DE<br>MATRICULAS 2025</div>
+                <div class="item">INSTRUCTIVO DE<br>MATRICULA<br>ESTUDIANTES ANTIGUOS</div>
+                <div class="item">REQUISITOS<br>BOLETINES Y CERTIFICADOS</div>
+            </div>
+        </div>
+    </body>
+</html>

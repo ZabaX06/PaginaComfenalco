@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <link rel="stylesheet" href="portales.css">
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <h1>Ingresa a los diferentes portales</h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/colegio banner.png" alt="Imagen 1">
+                <a href="https://virtualaula.comfenalco.com.co/colegioibague/moodle/" class="carousel-button">Aula Virtual</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://virtualaula.comfenalco.com.co/colegioibague/moodle/pluginfile.php?file=%2F1%2Ftheme_enlightlite%2Fslide2image%2F1724250521%2Fslide2_colegio_2017.png" alt="Imagen 2">
+                <a href="https://educacion.comfenalco.com.co:8082/Agora/#/login" class="carousel-button">Portal Educativo</a>
+            </div>
+            <div class="carousel-item">
+                <img src="images/colegio banner.png" alt="Imagen 3">
+                <a href="https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638622211151368352.MDliMWZhZjUtMDBiZS00ZTU5LWI0YzctOTk4OTY3OWY1MGU1NmIzODIxY2MtZDRiMy00NTBhLTk5OTEtYTNmZDA1Y2I3NDVi&ui_locales=es-US&mkt=es-US&msafed=0&client-request-id=eb1b723e-f400-480a-a31b-08c1aa6f76dd&state=X3D0p7cKsGmDRUnZDsVCUvXE9mCt6syMSeMqaRxcNXOFwJ46XSY536rvhsp8qzCNl_7yCYm51b5vfsHzEoqxOf4ub7hx10iHXcMGH2RVNDkF87U0ZvZbhMdyhR8wQ3Vht437HngQbf5YeklZwuqDTJ3vaOmL2E8ix0TPdcVYSajnio7Qj64aO6ZA0jpcZ3ugf7aFbd8wU4G793Hfm8nVqMJtNPz2Nm4a_CnDig2DhtnmcEDE2pPdhJqgpeYJTt4tr2a1PoHE0u1DZ9bkcqyrt-5RGo-q7Y-GKirfWrMj_fkVLnZFhCC2c0vJymRArS_ByB3j4y2829OYC2jlSfAI0fub0yMPntqjZRn-3gfOu7s&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0" class="carousel-button">Correo Institucional</a>
+            </div>
+        </div>
+        <button class="carousel-prev" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-next" aria-label="Siguiente">&#10095;</button>
+    </div>
+
+    <script>
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
+        const carousel = document.querySelector('.carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        const itemCount = items.length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : itemCount - 1;
+            updateCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < itemCount - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+        });
+
+        // Automatic sliding every 5 seconds
+        setInterval(() => {
+            nextButton.click();
+        }, 5000);
+
+        // Initial call
+        updateCarousel();
+    </script>
+</body>
+</html>

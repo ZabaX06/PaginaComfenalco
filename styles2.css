@@ -1,0 +1,80 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5b9b4e52;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #2f4f4f;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-inner {
+    background-color: #3e8e41;
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icon-section {
+    width: 150px;
+    text-align: center;
+}
+
+.icon-section img {
+    width: 100%;
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none; /* Eliminar el subrayado */
+    color: white; /* Cambiar el color del texto */
+}
+
+a:hover {
+    color: #c0c0c0; /* Opcional: color al pasar el cursor por encima */
+}
+
+footer {
+    margin-top: 50px;
+}
